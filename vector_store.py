@@ -45,7 +45,9 @@ def create_vector_db(texts, embeddings=None, collection_name="chroma"):
     selected_db = get_vector_store_class()
     db = selected_db(collection_name=Config.DATABASE.lower(),
                 embedding_function=proxy_embeddings,
-                persist_directory=os.path.join("store/", Config.DATABASE.lower()))
+                persist_directory=os.path.join("store/", Config.DATABASE.lower()),
+                collection_metadata={"hnsw:space": Config.DISTANCE_METHOD})
+    
     db.add_documents(texts)
 
     return db

@@ -73,3 +73,14 @@
 2025-06-23 16:59:19,761 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
 2025-06-23 16:59:20,020 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
 2025-06-23 16:59:24,129 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-23 18:39:37,300 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-23 18:40:10,510 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 18:40:10,512 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 18:40:10,896 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 18:40:20,146 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-23 18:40:30,342 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-23 18:40:31,011 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-23 18:40:31,985 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-23 18:40:32,436 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-23 18:40:33,619 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-23 18:40:34,232 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

@@ -12,6 +12,7 @@ class Config:
     MODEL_TEMP = float(os.getenv("MODEL_TEMP", 0))
     EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "TRANSFORMER")
     RETRIEVE_TOP_K = int(os.getenv("RETRIEVE_TOP_K", 5))
+    DISTANCE_METHOD = os.getenv("DISTANCE_METHOD", 'cosine')
     MIN_RELEVANCE_SCORE = int(os.getenv("MIN_RELEVANCE_SCORE", 5))
     CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", 600))
     CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", 300))

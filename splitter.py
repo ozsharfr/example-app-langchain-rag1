@@ -1,12 +1,12 @@
 # Split documents into chunks
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.docstore.document import Document
-
+from config import Config
 
 def split_documents(docs):
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=0,
+        chunk_size=Config.CHUNK_SIZE,
+        chunk_overlap=Config.CHUNK_OVERLAP,
         length_function=len,
         is_separator_regex=False)
 
