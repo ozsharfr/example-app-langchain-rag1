@@ -1,0 +1,75 @@
+2025-06-23 14:54:07,679 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-23 15:08:51,959 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-23 15:10:23,580 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-23 15:10:48,266 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-06-23 15:12:22,657 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-23 15:15:14,367 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-23 15:16:06,284 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-23 15:35:08,031 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 15:35:08,045 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 15:35:08,327 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 15:36:24,357 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 15:36:24,357 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 15:36:24,957 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 15:40:12,116 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 15:40:12,117 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 15:40:12,383 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 15:41:30,491 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 15:41:30,492 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 15:41:30,717 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 15:41:41,431 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 15:41:41,432 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 15:41:41,675 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 15:43:26,949 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 15:43:26,950 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 15:43:27,145 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 15:43:39,036 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 15:43:39,038 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 15:43:39,202 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 15:47:38,821 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 15:47:38,822 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 15:47:39,154 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 15:53:18,663 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-23 15:54:39,953 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-23 15:55:35,597 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-23 15:55:54,533 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 15:55:54,534 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 15:55:54,756 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 15:56:43,281 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-23 15:57:04,976 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 15:57:04,976 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 15:57:05,206 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 16:03:35,824 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-23 16:04:28,265 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-23 16:04:49,087 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 16:04:49,087 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 16:04:49,349 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 16:04:57,923 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-23 16:13:04,713 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 16:13:04,714 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 16:13:04,928 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 16:13:46,170 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-23 16:16:55,988 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-23 16:17:19,398 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 16:17:19,398 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 16:17:19,967 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 16:17:35,774 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-23 16:19:47,391 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-23 16:20:09,216 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 16:20:09,217 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 16:20:09,439 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 16:20:18,600 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-23 16:37:35,958 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 16:37:35,959 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-23 16:37:38,302 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-06-23 16:40:12,851 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 16:40:12,851 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 16:40:13,033 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 16:41:48,033 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 16:41:48,033 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 16:41:48,337 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 16:41:54,242 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-23 16:59:19,760 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-23 16:59:19,761 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-23 16:59:20,020 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-23 16:59:24,129 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.

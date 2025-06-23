@@ -7,11 +7,13 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 from langchain_core.messages.base import BaseMessage
 
-from basic_chain import basic_chain, get_model
+from basic_chain import basic_chain
+from define_model import get_model
+
 from remote_loader import get_wiki_docs
 from splitter import split_documents
 from vector_store import create_vector_db
-
+from config import Config
 
 def find_similar(vs, query):
     docs = vs.similarity_search(query)
@@ -55,8 +57,8 @@ def make_rag_chain(model, retriever, rag_prompt = None):
 
 def main():
     load_dotenv()
-    model = get_model("ChatGPT")
-    docs = get_wiki_docs(query="Bertrand Russell", load_max_docs=5)
+    model = get_model()
+    docs = get_wiki_docs(query="Bertrand Russell", load_max_docs=Config.RETRIEVE_TOP_K)
     texts = split_documents(docs)
     vs = create_vector_db(texts)
 

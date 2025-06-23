@@ -1,0 +1,11 @@
+langchain_core
+langchain_openai
+langchain_community
+dotenv
+pypdf
+pathlib
+langchain_groq
+langchain_ollama
+sentence_transformers
+wikipedia
+chromadb
