@@ -16,7 +16,7 @@ def ensemble_retriever_from_docs(docs, embeddings=None):
     texts = split_documents(docs)
     vs = create_vector_db(texts, embeddings)
     vs_retriever = vs.as_retriever()
-
+    # Retriever based only on text (no embeddings)
     bm25_retriever = BM25Retriever.from_texts([t.page_content for t in texts])
 
     ensemble_retriever = EnsembleRetriever(

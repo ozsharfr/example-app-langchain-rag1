@@ -10,3 +10,4 @@ sentence_transformers
 wikipedia
 chromadb
 streamlit
+rank_bm25
