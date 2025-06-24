@@ -84,3 +84,37 @@
 2025-06-23 18:40:32,436 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-06-23 18:40:33,619 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-06-23 18:40:34,232 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:22:00,273 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-24 10:24:33,425 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-24 10:24:33,426 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-24 10:24:33,831 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-24 10:25:01,060 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-24 10:25:10,644 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:25:11,463 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:25:12,390 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:25:12,907 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:25:14,329 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:25:14,945 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:31:05,268 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-24 10:31:57,550 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-24 10:32:25,655 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-24 10:32:25,657 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-24 10:32:26,052 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-24 10:32:33,171 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-24 10:32:42,728 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:32:43,489 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:32:44,368 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:32:44,858 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:32:46,218 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:32:46,799 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:33:04,501 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-24 10:33:31,305 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-24 10:33:31,307 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-24 10:33:31,586 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-24 10:33:45,265 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-24 10:34:03,374 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:34:04,178 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:34:05,066 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:34:05,681 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:34:07,012 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-24 10:34:07,632 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

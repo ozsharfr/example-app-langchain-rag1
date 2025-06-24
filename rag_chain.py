@@ -88,5 +88,5 @@ def main():
 
 if __name__ == '__main__':
     # this is to quite parallel tokenizers warning.
-    os.environ["TOKENIZERS_PARALLELISM"] = "false"
+    #os.environ["TOKENIZERS_PARALLELISM"] = "false"
     main()

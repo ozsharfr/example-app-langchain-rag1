@@ -31,7 +31,7 @@ class EmbeddingProxy:
 
 
 # This happens all at once, not ideal for large datasets.
-def create_vector_db(texts, embeddings=None, collection_name="chroma"):
+def create_vector_db(texts, embeddings=None):
     if not texts:
         logging.warning("Empty texts passed in to create vector database")
     # Select embeddings
