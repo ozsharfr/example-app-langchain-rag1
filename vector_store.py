@@ -1,56 +1,11 @@
 import logging
 import os
-from typing import List
 
 from langchain_openai import OpenAIEmbeddings
 from local_loader import get_document_text
 from remote_loader import download_file
 from splitter import split_documents
 from dotenv import load_dotenv
-from time import sleep
-
-from define_embeddings import get_embeddings
-from define_db import get_vector_store_class
-
-EMBED_DELAY = 0.02  # 20 milliseconds
-
-from config import Config
-# This is to get the Streamlit app to use less CPU while embedding documents into Chromadb.
-class EmbeddingProxy:
-    def __init__(self, embedding):
-        self.embedding = embedding
-
-    def embed_documents(self, texts: List[str]) -> List[List[float]]:
-        sleep(EMBED_DELAY)
-        return self.embedding.embed_documents(texts)
-
-    def embed_query(self, text: str) -> List[float]:
-        sleep(EMBED_DELAY)
-        return self.embedding.embed_query(text)
-
-
-
-# This happens all at once, not ideal for large datasets.
-def create_vector_db(texts, embeddings=None):
-    if not texts:
-        logging.warning("Empty texts passed in to create vector database")
-    # Select embeddings
-    if not embeddings:
-        # Initialize Selected Embeddings
-        embeddings = get_embeddings()
-
-    proxy_embeddings = EmbeddingProxy(embeddings)
-    # Create a vectorstore from documents
-    # this will be a chroma collection with a default name.
-    selected_db = get_vector_store_class()
-    db = selected_db(collection_name=Config.DATABASE.lower(),
-                embedding_function=proxy_embeddings,
-                persist_directory=os.path.join("store/", Config.DATABASE.lower()),
-                collection_metadata={"hnsw:space": Config.DISTANCE_METHOD})
-    
-    db.add_documents(texts)
-
-    return db
 
 
 def find_similar(vs, query):

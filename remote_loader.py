@@ -1,5 +1,6 @@
 import requests
 import os
+import logging
 
 from langchain_community.document_loaders import WebBaseLoader, WikipediaLoader
 from local_loader import get_document_text
@@ -53,7 +54,9 @@ def get_wiki_docs(query, load_max_docs=2):
 
 
 def main():
+
     # run through the different remote loading functions.
+    logging.info("load from URLs")
     problems_of_philosophy_by_russell = "https://www.gutenberg.org/ebooks/5827.html.images"
     docs = load_web_page(problems_of_philosophy_by_russell)
     for doc in docs:
@@ -61,17 +64,14 @@ def main():
 
     math_analysis_of_logic_by_boole = "https://www.gutenberg.org/files/36884/36884-pdf.pdf"
     local_pdf_path = download_file(math_analysis_of_logic_by_boole)
-
+    
+    logging.info("load from text docs")
     with open(local_pdf_path, "rb") as pdf_file:
         docs = get_document_text(pdf_file, title="Analysis of Logic")
 
-    for doc in docs:
-        print(doc)
-
+    logging.info("load from pdf docs")
     problems_of_philosophy_pdf = "https://s3-us-west-2.amazonaws.com/pressbooks-samplefiles/LewisTheme/The-Problems-of-Philosophy-LewisTheme.pdf"
     docs = load_online_pdf(problems_of_philosophy_pdf)
-    for doc in docs:
-        print(doc)
 
 
 if __name__ == "__main__":
