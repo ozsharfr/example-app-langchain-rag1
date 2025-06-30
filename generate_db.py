@@ -25,7 +25,7 @@ class EmbeddingProxy:
         sleep(EMBED_DELAY)
         return self.embedding.embed_query(text)
 
-
+from langchain_core.documents import Document
 
 # This happens all at once, not ideal for large datasets.
 def create_vector_db(texts,db_name , embeddings=None):

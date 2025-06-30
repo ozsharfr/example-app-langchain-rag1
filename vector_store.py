@@ -6,7 +6,7 @@ from local_loader import get_document_text
 from remote_loader import download_file
 from splitter import split_documents
 from dotenv import load_dotenv
-
+from generate_db import create_vector_db
 
 def find_similar(vs, query):
     docs = vs.similarity_search(query)

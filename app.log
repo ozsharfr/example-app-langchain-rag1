@@ -143,3 +143,350 @@
 2025-06-24 13:58:40,479 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-06-24 13:58:41,087 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-06-24 13:58:41,497 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 08:27:14,002 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-25 08:28:15,661 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-25 08:28:15,662 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-25 08:28:15,955 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-25 08:28:29,492 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-25 08:28:33,532 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 08:28:34,349 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 08:28:35,078 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 08:28:35,534 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 08:28:36,744 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 08:28:37,280 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 09:07:59,772 - root - INFO - load from URLs
+2025-06-25 09:08:04,217 - root - INFO - load from text docs
+2025-06-25 09:08:04,795 - root - INFO - load from pdf docs
+2025-06-25 09:10:16,722 - root - INFO - load from URLs
+2025-06-25 09:10:21,078 - root - INFO - load from text docs
+2025-06-25 09:10:21,878 - root - INFO - load from pdf docs
+2025-06-25 09:25:02,003 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-25 09:25:02,004 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-25 09:25:02,551 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-25 09:25:07,786 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-25 09:26:25,235 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-25 09:26:33,931 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-25 09:26:33,932 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-25 09:26:34,247 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-25 09:26:39,740 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-25 09:26:43,126 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 09:26:43,797 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 09:26:44,661 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 09:26:45,109 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 09:26:46,323 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 09:26:46,769 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-25 14:18:17,675 - root - INFO - load from URLs
+2025-06-25 14:18:22,936 - root - INFO - load from text docs
+2025-06-25 14:18:23,619 - root - INFO - load from pdf docs
+2025-06-25 16:13:57,971 - root - INFO - load from URLs
+2025-06-25 16:14:24,770 - root - INFO - load from text docs
+2025-06-25 16:14:38,277 - root - INFO - load from pdf docs
+2025-06-25 16:18:23,299 - root - INFO - load from URLs
+2025-06-25 16:18:30,889 - root - INFO - load from text docs
+2025-06-25 16:18:36,127 - root - INFO - load from pdf docs
+2025-06-25 16:20:35,661 - root - INFO - load from URLs
+2025-06-25 16:20:43,321 - root - INFO - load from text docs
+2025-06-25 16:20:48,635 - root - INFO - load from pdf docs
+2025-06-25 16:23:54,470 - root - INFO - load from URLs
+2025-06-25 16:24:02,046 - root - INFO - load from text docs
+2025-06-25 16:24:07,259 - root - INFO - load from pdf docs
+2025-06-25 16:25:47,124 - root - INFO - load from URLs
+2025-06-25 16:25:52,508 - root - INFO - load from text docs
+2025-06-25 16:25:53,802 - root - INFO - load from pdf docs
+2025-06-30 10:49:05,293 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 10:49:05,295 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 10:49:05,513 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 10:49:21,725 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 11:35:52,663 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 11:37:43,664 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-06-30 11:38:41,150 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 11:38:49,710 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 11:38:49,711 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 11:38:50,001 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 11:39:11,590 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 11:39:12,529 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-06-30 11:41:12,576 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 11:41:21,130 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 11:41:21,131 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 11:41:21,569 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 11:41:26,398 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 11:41:27,079 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-06-30 11:42:58,505 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 11:43:57,229 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 11:44:58,241 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 11:45:04,850 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 11:45:04,851 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 11:45:05,299 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 11:45:11,266 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 11:46:26,519 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 11:46:36,798 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 11:46:41,048 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 11:46:44,291 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 11:46:44,763 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 11:46:45,999 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 11:46:46,462 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 11:47:47,869 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 11:47:57,104 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 11:47:57,105 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 11:47:57,371 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 11:48:01,739 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 11:48:03,283 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-06-30 11:48:43,973 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 11:48:52,606 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 11:48:52,606 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 11:48:52,808 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 11:48:57,038 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 11:48:57,622 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-06-30 11:49:12,889 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 11:49:21,066 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 11:49:21,066 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 11:49:21,295 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 11:49:26,225 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 11:49:27,465 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-06-30 11:49:48,309 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 11:49:56,294 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 11:49:56,294 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 11:49:56,500 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 11:50:00,756 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 11:50:02,298 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 11:50:02,796 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 11:50:03,361 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 11:52:21,078 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 11:52:29,169 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 11:52:29,169 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 11:52:29,559 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 11:52:33,873 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 11:52:35,269 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 11:52:35,933 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 11:52:35,934 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 11:52:36,106 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 11:52:39,691 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 11:52:40,239 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 11:52:40,240 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 11:52:40,410 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 11:52:43,997 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 11:57:13,659 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 11:58:15,178 - root - INFO - Using cached embeddings - faster processing!
+2025-06-30 11:58:16,210 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 11:58:16,211 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 11:58:16,636 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 11:58:22,262 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 11:58:23,582 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 11:58:23,592 - root - ERROR - Error in main: too many values to unpack (expected 2)
+2025-06-30 11:59:24,387 - root - INFO - Using cached embeddings - faster processing!
+2025-06-30 11:59:25,947 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 11:59:25,948 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 11:59:26,329 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 11:59:30,847 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:00:20,376 - root - INFO - Using cached embeddings - faster processing!
+2025-06-30 12:00:20,945 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:00:20,945 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:00:21,324 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:00:25,004 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:07:55,253 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 12:08:05,322 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:08:05,323 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:08:05,554 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:08:09,856 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 12:09:31,692 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 12:09:42,210 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:09:42,926 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:09:43,345 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:09:43,738 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:11:04,252 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 12:11:14,301 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:11:14,728 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:11:15,334 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:11:15,877 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:12:48,579 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 12:12:58,037 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:12:58,037 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:12:58,276 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:13:03,027 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 12:13:45,478 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 12:13:54,105 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:13:54,105 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:13:54,333 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:13:58,344 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 12:14:00,045 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:14:00,723 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:14:01,354 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:14:02,078 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:14:54,621 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 12:15:03,426 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:15:03,427 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:15:03,818 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:15:08,165 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 12:15:11,452 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:15:12,410 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:15:12,956 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:15:12,957 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:15:13,128 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:15:16,730 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:15:17,286 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:15:17,853 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:15:17,853 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:15:18,019 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:15:22,059 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:15:22,778 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:16:45,690 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 12:19:18,983 - root - INFO - Using cached embeddings - faster processing!
+2025-06-30 12:19:21,578 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:19:21,578 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:19:21,810 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:19:46,477 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 12:19:47,958 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:19:48,578 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:20:05,128 - root - INFO - Using cached embeddings - faster processing!
+2025-06-30 12:20:06,887 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:20:06,887 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:20:07,712 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:20:12,812 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:20:13,487 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:22:42,941 - root - INFO - Using cached embeddings - faster processing!
+2025-06-30 12:22:43,491 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:22:43,491 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:22:43,684 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:22:49,285 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:22:50,123 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:22:56,836 - root - INFO - Using cached embeddings - faster processing!
+2025-06-30 12:22:57,403 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:22:57,404 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:22:57,654 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:23:00,619 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:23:01,097 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:23:32,480 - root - INFO - Using cached embeddings - faster processing!
+2025-06-30 12:23:33,075 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:23:33,076 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:23:33,270 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:23:36,354 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:23:36,841 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:31:39,072 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 12:31:49,058 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:31:49,058 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:31:49,277 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:31:54,093 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 12:31:57,535 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:31:58,386 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:31:58,958 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:31:58,959 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:31:59,116 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:32:02,191 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:32:02,689 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:32:03,241 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:32:03,242 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:32:03,413 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:32:07,778 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:32:08,498 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:33:03,719 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 12:33:23,720 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:33:23,720 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:33:23,955 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:33:28,340 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 12:33:31,613 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:33:32,671 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:33:53,770 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:33:53,771 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:33:53,927 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:33:57,198 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:33:57,634 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:38:02,509 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 12:38:23,093 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:38:23,093 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:38:23,518 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:38:28,740 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 12:38:32,224 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:38:33,182 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:41:45,332 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 12:41:58,835 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:41:58,835 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:41:59,091 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:42:04,888 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 12:42:08,133 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:42:09,130 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 12:55:41,192 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 12:55:54,071 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 12:55:54,071 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 12:55:54,310 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 12:55:58,911 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 12:56:02,220 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 13:04:29,292 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 13:04:42,440 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 13:04:42,440 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 13:04:42,711 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 13:04:47,273 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 13:04:51,194 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 13:04:52,248 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 13:05:08,714 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 13:05:08,714 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 13:05:08,876 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 13:05:12,087 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 13:05:12,738 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 13:07:57,442 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 13:08:12,618 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 13:08:12,618 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 13:08:13,041 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 13:08:18,806 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 13:08:22,184 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 13:08:23,192 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 13:12:07,442 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 13:12:16,321 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 13:12:16,321 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 13:12:16,699 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 13:12:20,889 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 13:12:24,160 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 13:12:25,104 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 13:12:25,653 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 13:12:25,653 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 13:12:25,820 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 13:12:28,933 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 13:12:29,634 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 13:12:30,193 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 13:12:30,193 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 13:12:30,387 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 13:12:34,015 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 13:12:34,856 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 13:20:34,361 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 13:20:50,436 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 13:20:50,436 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 13:20:50,650 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 13:20:56,125 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 13:29:18,791 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 13:29:47,632 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 13:29:47,632 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 13:29:47,848 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 13:29:52,351 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 13:34:45,712 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 13:35:14,757 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 13:35:14,758 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 13:35:15,003 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 13:35:41,991 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 13:36:47,776 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 13:39:49,560 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 13:47:07,956 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 13:47:25,035 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 13:47:25,036 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 13:47:25,486 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 13:47:31,509 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 13:47:48,868 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 13:47:50,020 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 14:40:21,837 - langchain_community.utils.user_agent - WARNING - USER_AGENT environment variable not set, consider setting it to identify your requests.
+2025-06-30 14:42:11,963 - root - INFO - Using cached embeddings - faster processing!
+2025-06-30 14:42:13,542 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 14:42:13,542 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 14:42:13,939 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 14:42:21,729 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-30 14:42:23,675 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 14:42:25,281 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 14:43:12,802 - root - INFO - Using cached embeddings - faster processing!
+2025-06-30 14:43:14,141 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 14:43:14,142 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 14:43:14,416 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 14:43:18,362 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 14:43:19,265 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 14:43:32,857 - root - INFO - Using cached embeddings - faster processing!
+2025-06-30 14:43:33,489 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-30 14:43:33,490 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: dmis-lab/biobert-base-cased-v1.1
+2025-06-30 14:43:33,692 - sentence_transformers.SentenceTransformer - WARNING - No sentence-transformers model found with name dmis-lab/biobert-base-cased-v1.1. Creating a new one with mean pooling.
+2025-06-30 14:43:36,882 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-30 14:43:37,576 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

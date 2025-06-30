@@ -10,6 +10,8 @@ from memory import SimpleTextRetriever
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from basic_chain import get_model
 from rag_chain import make_rag_chain
+from config import Config
+from generate_db import load_vector_db
 
 os.environ["LANGCHAIN_TRACING_V2"] = "false"
 
@@ -36,20 +38,27 @@ def main():
     model = get_model()
     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
-    system_prompt = "You are a helpful AI assistant for busy professionals trying to improve their health."
-    prompt = ChatPromptTemplate.from_messages(
-        [
-            ("system", system_prompt),
-            MessagesPlaceholder(variable_name="chat_history"),
-            ("human", "{question}"),
-        ]
-    )
+    #system_prompt = "You are a helpful AI assistant for busy professionals trying to improve their health."
+    # prompt = ChatPromptTemplate.from_messages(
+    #     [
+    #         ("system", system_prompt),
+    #         MessagesPlaceholder(variable_name="chat_history"),
+    #         ("human", "{question}"),
+    #     ]
+    # )
 
     text_path = "examples/grocery.md"
     text = open(text_path, "r").read()
     retriever = SimpleTextRetriever.from_texts([text])
+
+    vs = load_vector_db(db_name=Config.DATABASE)
+
+    # Besides similarly search, you can also use maximal marginal relevance (MMR) for selecting results.
+    # retriever = vs.as_retriever(search_type="mmr")
+    retriever = vs.as_retriever()
+
     rag_chain = make_rag_chain(model, retriever, rag_prompt=None)
-    chain = create_chat_with_memory(model, rag_chain, memory.chat_memory) | StrOutputParser()
+    rag_memory_chain = create_chat_with_memory(model, rag_chain, memory.chat_memory) | StrOutputParser()
 
     queries = [
         "What do I need to get from the grocery store besides milk?",
@@ -58,7 +67,7 @@ def main():
 
     for query in queries:
         print(f"\nQuestion: {query}")
-        response = chain.invoke(
+        response = rag_memory_chain.invoke(
             {"question": query},
             config={"configurable": {"session_id": "foo"}}
         )
