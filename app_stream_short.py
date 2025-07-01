@@ -1,26 +1,24 @@
-# app_streamlit.py
 import io
 import streamlit as st
 from rag_chain_memory import main_memory as main
 import logging
 
-# Add log handler
-def get_log_stream():
-    log_stream = io.StringIO()
-    handler = logging.StreamHandler(log_stream)
-    handler.setLevel(logging.INFO)
-    logger = logging.getLogger()
-    logger.addHandler(handler)
-    return log_stream, handler
-
-
-logger = logging.getLogger()
-
 st.title("Basic chat - based on papers archive")
+
+# 1. Initialize memory and vectorstore only once
+if "memory" not in st.session_state:
+    from langchain.memory import ConversationBufferMemory
+    st.session_state.memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
+
+if "vs" not in st.session_state:
+    from generate_db import load_vector_db
+    from config import Config
+    st.session_state.vs = load_vector_db(db_name=Config.DATABASE.lower())
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
+# 2. Chat display logic
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.write(message["content"])
@@ -31,18 +29,24 @@ if query := st.chat_input("Ask your question here"):
         st.write(query)
 
     try:
-        log_stream, handler = get_log_stream()
-
+        # Logging setup
+        log_stream = io.StringIO()
+        handler = logging.StreamHandler(log_stream)
+        handler.setLevel(logging.INFO)
+        logger = logging.getLogger()
+        logger.addHandler(handler)
 
         logger.info("Using cached embeddings - faster processing!")
-        final_answer = main(
-            q=query
+
+        # 3. Pass persistent memory and vs to main
+        final_answer , retrieved_docs = main(
+            q=query,
+            memory=st.session_state.memory,
+            vs=st.session_state.vs
         )
 
-        # Remove the handler so logs don't duplicate
+
         logging.getLogger().removeHandler(handler)
-        # Show also logs 
-        # Display logs in an expandable section
         with st.expander("Show logs"):
             st.text(log_stream.getvalue())
 
@@ -53,4 +57,3 @@ if query := st.chat_input("Ask your question here"):
     st.session_state.messages.append({"role": "assistant", "content": final_answer})
     with st.chat_message("assistant"):
         st.write(final_answer)
-    
