@@ -27,7 +27,7 @@ class DocumentCaptureCallback(BaseCallbackHandler):
         self.retrieved_docs = documents
 
 def make_rag_chain(llm, retriever, prompt , memory):
-    
+    """Create a RAG chain that retrieves documents and generates a response using an LLM."""
 
     def retrieve_docs(input_data):
         # Use .invoke() to trigger callbacks
@@ -62,8 +62,8 @@ def main_memory(q : str , vs, memory ) -> tuple:
     doc_callback = DocumentCaptureCallback()
     prompt = get_prompt()
     # Besides similarly search, you can also use maximal marginal relevance (MMR) for selecting results.
-    # retriever = vs.as_retriever(search_type="mmr")
-    retriever = vs.as_retriever(callbacks=[doc_callback])
+    # retriever = vs.as_retriever(search_type="mmr", search_kwargs={"k": Config.RETRIEVE_TOP_K})
+    retriever = vs.as_retriever(callbacks=[doc_callback], search_kwargs={"k": Config.RETRIEVE_TOP_K})
     # change : Add get_prompt
     #rag_chain = make_rag_chain(model, retriever, doc_callback=doc_callback, rag_prompt=None)
     rag_memory_chain = make_rag_chain(model, retriever, prompt, memory.chat_memory) 
@@ -92,6 +92,6 @@ if __name__ == '__main__':
     ]
     for q in questions:
         answer , docs = main_memory(q=q, memory=memory , vs=vs)
-        sources = '\n'.join([doc.metadata['source'] for doc in docs if 'source' in doc.metadata])
+        sources = '\n'.join(set([doc.metadata['source'] for doc in docs if 'source' in doc.metadata]))
         print (answer)
         print (sources)

@@ -3,7 +3,9 @@ import streamlit as st
 from rag_chain_memory import main_memory as main
 import logging
 
-st.title("Basic chat - based on papers archive")
+# Option 1: Custom HTML with specific font size
+st.markdown("<h1 style='text-align: center; font-size: 30px;'>RAG based chat- based on Pre-built custom DB</h1>", 
+            unsafe_allow_html=True)
 
 # 1. Initialize memory and vectorstore only once
 if "memory" not in st.session_state:
@@ -56,5 +58,5 @@ if query := st.chat_input("Ask your question here"):
 
     st.session_state.messages.append({"role": "assistant", "content": final_answer})
     with st.chat_message("assistant"):
-        sources = '\n'.join([doc.metadata['source'] for doc in retrieved_docs if 'source' in doc.metadata])
+        sources = '\n'.join(set([doc.metadata['source'] for doc in retrieved_docs if 'source' in doc.metadata]))
         st.write(final_answer +'\n'+ sources)
