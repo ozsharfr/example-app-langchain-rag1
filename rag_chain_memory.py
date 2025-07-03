@@ -8,7 +8,7 @@ from langchain_core.runnables.passthrough import RunnablePassthrough
 from langchain_core.messages.base import BaseMessage
 from define_model import get_model
 from generate_db import load_vector_db
-from prompts import get_prompt
+from prompts import get_prompt , get_enriched_prompt
 
 from config import Config
 import os
@@ -26,7 +26,7 @@ class DocumentCaptureCallback(BaseCallbackHandler):
         print(f"[Callback] Retrieved {len(documents)} docs")
         self.retrieved_docs = documents
 
-def make_rag_chain(llm, retriever, prompt , memory):
+def make_rag_chain(llm, retriever, prompt , memory : ConversationBufferMemory):
     """Create a RAG chain that retrieves documents and generates a response using an LLM."""
 
     def retrieve_docs(input_data):
@@ -60,7 +60,7 @@ def main_memory(q : str , vs, memory ) -> tuple:
     
     # Define callback handler
     doc_callback = DocumentCaptureCallback()
-    prompt = get_prompt()
+    prompt =  get_enriched_prompt()
     # Besides similarly search, you can also use maximal marginal relevance (MMR) for selecting results.
     # retriever = vs.as_retriever(search_type="mmr", search_kwargs={"k": Config.RETRIEVE_TOP_K})
     retriever = vs.as_retriever(callbacks=[doc_callback], search_kwargs={"k": Config.RETRIEVE_TOP_K})
