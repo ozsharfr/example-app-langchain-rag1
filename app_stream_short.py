@@ -20,7 +20,22 @@ if "vs" not in st.session_state:
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# 2. Chat display logic
+if "sources" not in st.session_state:
+    st.session_state.sources = []
+
+# 2. Create sidebar for sources
+with st.sidebar:
+    st.header("📚 Sources")
+    if st.session_state.sources:
+        st.subheader("Recent Sources:")
+        for i, source_group in enumerate(reversed(st.session_state.sources[-5:])):  # Show last 5 queries
+            with st.expander(f"Query {len(st.session_state.sources) - i}"):
+                for source in source_group:
+                    st.text(f"• {source}")
+    else:
+        st.info("Sources will appear here after you ask questions")
+
+# 3. Chat display logic
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.write(message["content"])
@@ -40,7 +55,7 @@ if query := st.chat_input("Ask your question here"):
 
         logger.info("Using cached embeddings - faster processing!")
 
-        # 3. Pass persistent memory and vs to main
+        # 4. Pass persistent memory and vs to main
         final_answer , retrieved_docs = main(
             q=query,
             memory=st.session_state.memory,
@@ -57,6 +72,16 @@ if query := st.chat_input("Ask your question here"):
         final_answer = "Sorry, there was an error processing your request."
 
     st.session_state.messages.append({"role": "assistant", "content": final_answer})
+    
+    # Store sources for sidebar display
+    current_sources = list(set([doc.metadata['source'] for doc in retrieved_docs if 'source' in doc.metadata]))
+    st.session_state.sources.append(current_sources)
+    
     with st.chat_message("assistant"):
-        sources = '\n'.join(set([doc.metadata['source'] for doc in retrieved_docs if 'source' in doc.metadata]))
-        st.write(final_answer +'\n'+ sources)
+        st.write(final_answer)
+        
+        # Optional: Still show sources inline with expander
+        if current_sources:
+            with st.expander("📎 View Sources"):
+                for source in current_sources:
+                    st.text(f"• {source}")

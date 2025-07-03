@@ -18,8 +18,19 @@ def load_txt_files(data_dir="./data"):
     paths = list_txt_files(data_dir)
     for path in paths:
         print(f"Loading {path}")
-        loader = TextLoader(path)
-        docs.extend(loader.load())
+        try:
+            # Try UTF-8 encoding first
+            loader = TextLoader(path, encoding='utf-8')
+            docs.extend(loader.load())
+        except UnicodeDecodeError:
+            try:
+                # Fall back to latin-1 if UTF-8 fails
+                print(f"UTF-8 failed for {path}, trying latin-1")
+                loader = TextLoader(path, encoding='latin-1')
+                docs.extend(loader.load())
+            except Exception as e:
+                print(f"Failed to load {path}: {e}")
+                continue
     return docs
 
 
@@ -47,9 +58,19 @@ def get_document_text(uploaded_file, title=None):
             docs.append(doc)
 
     else:
-        # assume text
-        doc_text = uploaded_file.read().decode()
-        docs.append(doc_text)
+        # assume text - handle encoding issues
+        try:
+            doc_text = uploaded_file.read().decode('utf-8')
+        except UnicodeDecodeError:
+            try:
+                uploaded_file.seek(0)  # Reset file pointer
+                doc_text = uploaded_file.read().decode('latin-1')
+            except UnicodeDecodeError:
+                uploaded_file.seek(0)  # Reset file pointer
+                doc_text = uploaded_file.read().decode('cp1252', errors='ignore')
+        
+        doc = Document(page_content=doc_text, metadata={'title': title})
+        docs.append(doc)
 
     return docs
 
