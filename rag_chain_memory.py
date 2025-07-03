@@ -92,4 +92,6 @@ if __name__ == '__main__':
     ]
     for q in questions:
         answer , docs = main_memory(q=q, memory=memory , vs=vs)
+        sources = '\n'.join([doc.metadata['source'] for doc in docs if 'source' in doc.metadata])
         print (answer)
+        print (sources)

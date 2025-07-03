@@ -56,4 +56,5 @@ if query := st.chat_input("Ask your question here"):
 
     st.session_state.messages.append({"role": "assistant", "content": final_answer})
     with st.chat_message("assistant"):
-        st.write(final_answer)
+        sources = '\n'.join([doc.metadata['source'] for doc in retrieved_docs if 'source' in doc.metadata])
+        st.write(final_answer +'\n'+ sources)

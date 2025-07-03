@@ -13,8 +13,15 @@ def split_documents(docs):
     contents = docs
     if docs and isinstance(docs[0], Document):
         contents = [doc.page_content for doc in docs]
-
     texts = text_splitter.create_documents(contents)
+
+    # Enforce using documents
+    texts = text_splitter.split_documents(docs)
     n_chunks = len(texts)
     print(f"Split into {n_chunks} chunks")
     return texts
+
+if __name__ == '__main__':
+    from generate_db import get_wiki_docs
+    docs = get_wiki_docs(query="Bertrand Russell", load_max_docs=Config.RETRIEVE_TOP_K)
+    split_documents(docs)
