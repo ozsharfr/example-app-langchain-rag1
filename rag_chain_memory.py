@@ -8,7 +8,7 @@ from langchain_core.runnables.passthrough import RunnablePassthrough
 from langchain_core.messages.base import BaseMessage
 from define_model import get_model
 from generate_db import load_vector_db
-from prompts import get_prompt
+from prompts import get_prompt , get_enriched_prompt
 from retriever import create_ensemble_retriever, initialize_bm25_retriever
 
 from config import Config
@@ -40,7 +40,8 @@ def make_rag_chain(llm, retriever, prompt , memory):
     chain = (
         RunnablePassthrough.assign(
             context=retrieve_docs,
-            question=lambda x: x["question"]
+            question=lambda x: x["question"],
+            domain = lambda a: Config.DOMAIN
         )
         | prompt
         | llm
@@ -61,7 +62,7 @@ def main_memory(q: str, retriever, memory) -> tuple:
 
     # Define callback handler
     doc_callback = DocumentCaptureCallback()
-    prompt = get_prompt()
+    prompt = get_enriched_prompt()
 
     # Create RAG chain
     rag_memory_chain = make_rag_chain(model, retriever, prompt, memory.chat_memory)
@@ -79,6 +80,7 @@ def main_memory(q: str, retriever, memory) -> tuple:
     return response, retrieved_docs
 
 if __name__ == '__main__':
+    from judge_answer import judge_answer
     # This is to quiet parallel tokenizers warning.
     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
     vs = load_vector_db(db_name=Config.DATABASE.lower())
@@ -95,8 +97,14 @@ if __name__ == '__main__':
         "What was most notable about \"An Essay on the Foundations of Geometry\"?",
     ]
 
+    l_scores = []
     for q in questions:
         answer, docs = main_memory(q=q, retriever=retriever, memory=memory)
         sources = '\n'.join([doc.metadata['source'] for doc in docs if 'source' in doc.metadata])
-        print(answer)
-        print(sources)
+        llm = get_model()
+        answer_of_score = judge_answer(llm, question = q, answer = answer, 
+                     sources = sources)
+        l_scores.append(answer_of_score.content.split('\n')[0])
+
+    print ("Scores:", l_scores)
+        
