@@ -13,10 +13,10 @@ def get_prompt():
 
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 
-def get_enriched_prompt():
+def get_enriched_prompt() -> ChatPromptTemplate:
     prompt = ChatPromptTemplate.from_messages([
         ("system", 
-        "You are a helpful assistant. "
+        "You are a helpful assistant in the domain of  {domain}. "
         "Use the provided context to answer the user's question as accurately as possible. "
         "If the answer is not in the context, say you don't know. "
         "Cite relevant sections or sources from the context when possible. "

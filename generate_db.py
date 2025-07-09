@@ -72,7 +72,8 @@ from remote_loader import main as get_docs
 def main(db_name ,append = False ):
     # connector (could be multiple connectors) :
     #docs = get_docs()#
-    docs = get_wiki_docs(query="Bertrand Russell", load_max_docs=Config.RETRIEVE_TOP_K) ## change
+    docs = get_wiki_docs(query="Bertrand Russell", 
+                         load_max_docs=150) ## change
     # Split to chunks
     texts = split_documents(docs)
     # Either append or create new DB

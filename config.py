@@ -24,7 +24,8 @@ class Config:
     OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
     DATABASE = os.getenv("DATABASE", "Chroma")
     MODEL_KEY = os.getenv("MODEL_KEY", "")
-
+    DOMAIN = os.getenv("DOMAIN", "History")
+    
     @staticmethod
     def setup_logging():
         logging.basicConfig(
